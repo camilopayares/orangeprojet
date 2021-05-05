@@ -60,7 +60,7 @@ public class OrangeUpdatePersonalDetails_elements {
 	public WebElement  empmilitaryser;
 	
 	@FindBy(id="btnSave")
-	public WebElement empsavebtn;
+	public WebElement empSaveButton;
 	
 	@FindBy(id="btnEditCustom")
 	public WebElement empeditcustombutton;

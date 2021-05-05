@@ -16,7 +16,7 @@ private WebDriver driver;
 	}
 	
 	public void clickEditButton() {
-		orangeUpdatePersonalDetails_elements.empsavebtn.click();
+		orangeUpdatePersonalDetails_elements.empSaveButton.click();
 	}
 	
 	public void enterFirstName(String firstname) {
@@ -55,11 +55,11 @@ private WebDriver driver;
 		orangeUpdatePersonalDetails_elements.empsinno.sendKeys(sinno);
 	}
 	
-	public void clickMale() {
-		orangeUpdatePersonalDetails_elements.empoptgender1.click();
+	public void clickMale(String male) {
+		orangeUpdatePersonalDetails_elements.empoptgender1.sendKeys(male);
 	}
-	public void clickFemale() {
-		orangeUpdatePersonalDetails_elements.empoptgender2.click();
+	public void clickFemale(String female) {
+		orangeUpdatePersonalDetails_elements.empoptgender2.sendKeys(female);
 	}
 	
 	public void enterMaritalStatus(String maritalstatus) {
@@ -78,16 +78,15 @@ private WebDriver driver;
 		orangeUpdatePersonalDetails_elements.empnickname.sendKeys(nickname);
 	}
 	
-	public void clickSmokeFlag() {
-		orangeUpdatePersonalDetails_elements.empsmokeflag.click();
+	public void clickSmokeFlag(String smoker) {
+		orangeUpdatePersonalDetails_elements.empsmokeflag.sendKeys(smoker);
 	}
-	
 	public void enterMilitaryService(String militaryservice) {
 		orangeUpdatePersonalDetails_elements.empmilitaryser.sendKeys(militaryservice);
 	}
 	
 	public void clickSaveButton() {
-		orangeUpdatePersonalDetails_elements.empsavebtn.click();
+		orangeUpdatePersonalDetails_elements.empSaveButton.click();
 	}
 	
 	public void clickEditCustomButton() {
