@@ -1,11 +1,14 @@
 package Elements;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OrangeUpdateEmergencyContacts_elements {
+public class OrangeEmergencyContacts_elements {
 	WebDriver driver;
 	
 	@FindBy(id="btnAddContact")
@@ -46,8 +49,30 @@ public class OrangeUpdateEmergencyContacts_elements {
 	
 	@FindBy(id="btnDeleteAttachment")
 	public WebElement btndeleteattachment;
+	
+	@FindBy(xpath="//*[@id=\"emgcontact_list\"]/tbody/tr[1]/td[1]/input")
+	public WebElement checkbox;
 		
-	public OrangeUpdateEmergencyContacts_elements(WebDriver driver) {
+	@FindBy(xpath="//*[@id=\"emgcontact_list\"]/tbody/tr[1]/td[2]/a")
+	public WebElement nameLink;
+	
+	@FindBy(css="#listEmegrencyContact > div.head > h1")
+	public WebElement assignedContactHeader;
+	
+	@FindBy(id="emergencyContactHeading")
+	public WebElement emergencyContactHeader;
+	
+	@FindBy(xpath="//*[@id=\"emgcontact_list\"]/tbody/tr[1]/td[2]/a")
+	public WebElement firstContactLink;
+	
+	@FindBy(xpath="//*[@id=\"emgcontact_list\"]/tbody/tr[1]/td[1]/input")
+	public WebElement firstContactCheckbox;
+	
+	public List<WebElement> contactTdWithName(String name) {
+		return driver.findElements(By.xpath("//*[@id='emgcontact_list']/tbody/tr/td/a[contains(text(), '" + name + "')]"));
+	}
+	
+	public OrangeEmergencyContacts_elements(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
