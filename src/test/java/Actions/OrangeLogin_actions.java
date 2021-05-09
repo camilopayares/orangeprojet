@@ -27,4 +27,9 @@ private WebDriver driver;
 		orangeLogin_elements.loginbutton.click();
 	}
 	
+	public void login() {
+		enterUsername();
+		enterPassword();
+		clickLoginButton();
+	}
 }
