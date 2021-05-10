@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome=true,
 		dryRun=false, //true roule les test qui n'ont pas de code , validateur de escenarios
 		//name="count"
-		tags= "@P7" 
+		tags= "@P88" 
 		)
 public class TestRunner {
 	
