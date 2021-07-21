@@ -14,5 +14,5 @@ public class OrangeDashboard_elements {
 	public OrangeDashboard_elements(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}
+		}
 }

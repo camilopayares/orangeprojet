@@ -8,6 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 public class OrangeUpdateContactDetails_elements {
 	WebDriver driver;
 	
+	@FindBy(xpath="//a[contains(text(),'Contact Details')]")
+	public WebElement btncontactdetails;
+		
 	@FindBy(id="contact_street1")
 	public WebElement empcontactstreet1;
 	
@@ -39,23 +42,11 @@ public class OrangeUpdateContactDetails_elements {
 	public WebElement  empworkmail;
 	
 	@FindBy(id="contact_emp_oth_email")
-	public WebElement  empothemail;
+	public WebElement  empothermail;
 	
 	@FindBy(id="btnSave")
 	public WebElement btnsave;
-	
-	@FindBy(id="btnAddAttachment")
-	public WebElement btnaddattachment;
-	
-	@FindBy(id="ufile")
-	public WebElement btnufile;
-	
-	@FindBy(id="txtAttDesc")
-	public WebElement attdesc;
-	
-	@FindBy(id="btnSaveAttachment")
-	public WebElement btnsaveattachment;
-	
+		
 	public OrangeUpdateContactDetails_elements(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

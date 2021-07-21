@@ -21,8 +21,8 @@ public class OrangeLogin_steps {
 		 ca.gotoUrl("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
 		 Thread.sleep(4000);
 	}
-	@When("I enter username and login and I click on Edit button")
-	public void i_enter_username_and_login_and_i_click_on_edit_button() {
+	@When("I enter username and login and I click on Login button")
+	public void i_enter_username_and_login_and_i_click_on_login_button() {
 		orangeLogin_actions.enterUsername();
 		orangeLogin_actions.enterPassword();
 		orangeLogin_actions.clickLoginButton();

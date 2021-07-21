@@ -11,9 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"Steps"},
 		plugin= {"pretty","html:target/report1.html"},// To generate report in HTML, JUnit,  or JSON format
 		monochrome=true,
-		dryRun=false, //true roule les test qui n'ont pas de code , validateur de escenarios
+		dryRun=false,
+		//true roule les test qui n'ont pas de code , validateur de escenarios
 		//name="count"
-		tags= "@P88" 
+		tags= "@P8" 
 		)
 public class TestRunner {
 	

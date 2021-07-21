@@ -20,6 +20,10 @@ private WebDriver driver;
 		orangeUpdatePersonalDetails_elements.empSaveButton.click();
 	}
 	
+	public void deleteEmployeeId() {
+		orangeUpdatePersonalDetails_elements.empid.clear();
+	}
+		
 	public void enterEmployeeId(String id) {
 		orangeUpdatePersonalDetails_elements.empid.sendKeys(id);
 	}
@@ -32,8 +36,16 @@ private WebDriver driver;
 		orangeUpdatePersonalDetails_elements.empsinno.sendKeys(sinno);
 	}
 	
+	public void deleteLicenceNumber() {
+		orangeUpdatePersonalDetails_elements.emplicenno.clear();
+	}
+	
 	public void enterLicenceNumber(String liceno) {
 		orangeUpdatePersonalDetails_elements.emplicenno.sendKeys(liceno);
+	}
+	
+	public void deleteDateOfBirthday() {
+		orangeUpdatePersonalDetails_elements.empdob.clear();
 	}
 		
 	public void enterDateOfBirthday(String dob) {
